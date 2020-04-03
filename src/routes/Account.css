@@ -1,0 +1,17 @@
+.Me .profile {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://localhost:3000/profile.jpg);
+    border-radius: 100px;
+    margin: 20px auto;
+}
+
+.Me .info {
+    text-align: center;
+    line-height: 1.2;
+    color: #333;
+}
+
+.Me .GreenPointBadge svg{
+    fill: white !important;
+}

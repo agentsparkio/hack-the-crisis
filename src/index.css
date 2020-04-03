@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.GreenPointBadge {
+  background: limegreen !important;
+  border-radius: 50px !important;
+  display: block !important;
+  margin: 0 auto;
+  color: white !important;
+  margin-top: 12px;
+  margin-bottom: 24px;
+
+}

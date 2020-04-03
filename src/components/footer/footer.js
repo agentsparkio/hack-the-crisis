@@ -16,9 +16,10 @@ function Footer() {
         <footer className="footer">
             <Navbar>
                 <NavbarGroup align={Alignment.CENTER}>
-                    <Link to="/me"><Button className={Classes.MINIMAL} icon="user" text="Me" /></Link>
-                    <Link to="/learn"><Button className={Classes.MINIMAL} icon="trending-up" text="Learn" /></Link>
-                    <Link to="/explore"><Button className={Classes.MINIMAL} icon="layout" text="Explore" /></Link>
+                    {/** FIXME: Active Styles */}
+                    <Link activeClassName="active" to="/me"><Button className={Classes.MINIMAL} icon="user" text="Me" /></Link>
+                    <Link activeClassName="active" to="/learn"><Button className={Classes.MINIMAL} icon="trending-up" text="Learn" /></Link>
+                    <Link activeClassName="active" to="/explore"><Button className={Classes.MINIMAL} icon="layout" text="Explore" /></Link>
                 </NavbarGroup>
             </Navbar>
         </footer>

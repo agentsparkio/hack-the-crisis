@@ -6,23 +6,27 @@ import {
 } from "react-router-dom";
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
-import "./blueprint.css";
 import Account from './routes/account';
+import "./blueprint.css";
+import "./App.css";
 
 function App() {
   return (
     <Router>
       <Header />
-        {/* A <Switch> looks through its children <Route>s and
+      {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
+      <div className="content">
         <Switch>
           <Route path="/account">
-          <Account />
+            <Account />
           </Route>
           <Route path="/">
             <Account />
           </Route>
         </Switch>
+
+      </div>
 
       <Footer />
 
