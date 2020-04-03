@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import Header from './components/header/header';
+import Footer from './components/footer/footer';
 import "./blueprint.css";
 import Account from './routes/account';
 
@@ -22,6 +23,9 @@ function App() {
             <Account />
           </Route>
         </Switch>
+
+      <Footer />
+
     </Router>
 
   );

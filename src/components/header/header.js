@@ -20,12 +20,11 @@ function Header() {
             <Navbar>
                 <NavbarGroup align={Alignment.LEFT}>
                     <NavbarHeading>
-                        <Link to="/"><Icon icon={IconNames.UPDATED} /> Home</Link>
+                        <Link to="/"><Icon icon={IconNames.HEATMAP} /> eConnect</Link>
                     </NavbarHeading>
-                    <NavbarDivider />
-                    <Link to="/me"><Button className={Classes.MINIMAL} icon="user" text="Me" /></Link>
-                    <Link to="/learn"><Button className={Classes.MINIMAL} icon="trending-up" text="Learn" /></Link>
-                    <Link to="/explore"><Button className={Classes.MINIMAL} icon="layout" text="Explore" /></Link>
+                </NavbarGroup>
+                <NavbarGroup align={Alignment.RIGHT}>
+                    <Link to="/settings"><Button className={Classes.MINIMAL} icon="cog" text="" /></Link>
                 </NavbarGroup>
             </Navbar>
         </header>
