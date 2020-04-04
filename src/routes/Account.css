@@ -15,3 +15,8 @@
 .Me .GreenPointBadge svg{
     fill: white !important;
 }
+
+.Me .bp3-tab {
+        width:50%;
+        text-align: center;
+}

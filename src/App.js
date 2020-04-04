@@ -24,7 +24,7 @@ function App() {
             renders the first one that matches the current URL. */}
       <div className="content">
         <Switch>
-          <Route path="/account">
+          <Route path="/me">
             <Account />
           </Route>
           <Route path="/learn">

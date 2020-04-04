@@ -1,5 +1,6 @@
 import React from 'react';
 import Challenge from "./challenge";
+import "./learn.css";
 
 function Learn() {
     return (

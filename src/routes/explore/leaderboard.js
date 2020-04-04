@@ -4,6 +4,7 @@ function Leaderboard() {
     return (
         <div className="Community">
             Leaderboard TODO: Data and map
+            
         </div>
     );
 }
