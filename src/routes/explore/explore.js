@@ -5,7 +5,7 @@ import Community from "./community";
 import './explore.css';
 
 function Explore() {
-  const [selectedTabId, selectTabId] = React.useState("Achievement");
+  const [selectedTabId, selectTabId] = React.useState("Leaderboard");
 
   return (
     <div className="Explore">
