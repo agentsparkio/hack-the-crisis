@@ -1,0 +1,19 @@
+.Badge {
+    background: limegreen !important;
+    border-radius: 50px !important;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.Badge .bp3-button-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.6rem;
+    color: white;
+}
+
+.Badge svg {
+    fill: white !important;
+}

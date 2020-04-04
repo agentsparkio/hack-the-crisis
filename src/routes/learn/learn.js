@@ -5,6 +5,7 @@ import "./learn.css";
 function Learn() {
     return (
         <div className="Learn">
+            <p>Dashboard: Earn 100 extra GP today by doing the following challenges: </p>
             <Challenge
                 name="Recycling 101"
                 score="3"

@@ -1,11 +1,8 @@
 import React from 'react';
-import {
-  Button,
-  Classes,
-} from "@blueprintjs/core";
 import { Tab, Tabs } from "@blueprintjs/core";
 import Achievement from "./achievement";
 import Rewards from "./Rewards";
+import Badge from "./../components/badge/badge";
 import './Account.css';
 
 function Account() {
@@ -18,7 +15,7 @@ function Account() {
         Jane Smith<br />
         Testville NSW<br />
         Level 10 - Captain Planet<br />
-        <Button className={`${Classes.MINIMAL} GreenPointBadge`} icon="tree" text="165 GP" />
+        <Badge points="20" />
       </div>
       <Tabs onChange={(id) => { selectTabId(id)}} selectedTabId={selectedTabId}>
         <Tab id="Achievement" title="Achievement" panel={<Achievement />} />
