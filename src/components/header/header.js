@@ -16,15 +16,16 @@ import "./header.css";
 function Header() {
     const ProfileMenu = (
         <Menu>
-            <MenuItem icon="graph" text="Graph" />
-            <MenuItem icon="map" text="Map" />
-            <MenuItem icon="th" text="Table" shouldDismissPopover={false} />
-            <MenuItem icon="zoom-to-fit" text="Nucleus" disabled={true} />
+            <Link to="/timeline"><MenuItem icon="star" text="Achievements" /></Link>
+            <Link to="/my-data"><MenuItem icon="timeline-line-chart" text="My Data" /></Link>
+            <MenuItem icon="map" text="Map (coming soon)" disabled={true} />
             <MenuDivider />
-            <MenuItem icon="cog" text="Settings...">
+            <Link to="/about"><MenuItem icon="help" text="About" /></Link>
+            <MenuItem icon="log-out" text="Logout" />
+            {/* <MenuItem icon="cog" text="Settings...">
                 <MenuItem icon="add" text="Add new application" disabled={true} />
                 <MenuItem icon="remove" text="Remove application" />
-            </MenuItem>
+            </MenuItem> */}
         </Menu>
     );
 

@@ -9,9 +9,13 @@ import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import Quiz from './components/quiz/quiz';
 // pages
-import Account from './routes/me/account';
+import Profile from './routes/profile/profile';
+import Dashboard from './routes/me/dashboard';
 import Explore from './routes/explore/explore';
 import Learn from './routes/learn/learn';
+import Achievement from "./routes/profile/achievement";
+import MyData from "./routes/profile/myData";
+import About from "./routes/profile/about";
 
 import "./blueprint.css";
 import "./App.css";
@@ -22,9 +26,18 @@ function App() {
       <Header />
       <div className="content">
         <Switch>
-
-          <Route path="/me">
-            <Account />
+          <Route path="/profile">
+            <Profile />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          
+          <Route path="/timeline">
+            <Achievement />
+          </Route>
+          <Route path="/my-data">
+            <MyData />
           </Route>
           <Route path="/learn">
             <Learn />
@@ -40,8 +53,7 @@ function App() {
             />
           </Route>
           <Route path="/">
-            <Account />
-
+            <Dashboard />
           </Route>
         </Switch>
 

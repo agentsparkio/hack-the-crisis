@@ -17,7 +17,7 @@ function Footer() {
             <Navbar>
                 <NavbarGroup align={Alignment.CENTER}>
                     {/** FIXME: Active Styles */}
-                    <NavLink exact activeClassName="active" to="/me"><Button className={Classes.MINIMAL} icon="user" text="Me" /></NavLink>
+                    <NavLink exact activeClassName="active" to="/me"><Button className={Classes.MINIMAL} icon="dashboard" text="Dashboard" /></NavLink>
                     <NavLink exact activeClassName="active" to="/learn"><Button className={Classes.MINIMAL} icon="heart" text="Learn" /></NavLink>
                     <NavLink exact activeClassName="active" to="/explore"><Button className={Classes.MINIMAL} icon="layout" text="Explore" /></NavLink>
                 </NavbarGroup>

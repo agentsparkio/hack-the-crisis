@@ -10,7 +10,7 @@ import Badge from "../../components/badge/badge";
 
 function Achievement() {
   return (
-    <div className="Achievement">
+    <div className="Achievement container">
       <VerticalTimeline>
         {stubData.achievements.length && stubData.achievements.map(event => (
               <VerticalTimelineElement

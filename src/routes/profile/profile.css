@@ -1,18 +1,14 @@
-.Me .profile {
+.Profile .profile {
     width: 100px;
     height: 100px;
     background-image: url(profile.jpg);
     border-radius: 100px;
     margin: 20px auto;
+    text-align: center;
 }
 
-.Me .info {
+.Profile .info {
     text-align: center;
     line-height: 1.2;
     color: #333;
-}
-
-.Me .bp3-tab {
-        width:50%;
-        text-align: center;
 }

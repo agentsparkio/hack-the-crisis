@@ -22,6 +22,11 @@ code {
     monospace;
 }
 
+.container {
+  text-align: center;
+  margin: 24px;
+}
+
 .right {
   float: right;
 }
