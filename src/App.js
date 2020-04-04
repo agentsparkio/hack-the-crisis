@@ -7,6 +7,8 @@ import {
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import Account from './routes/account';
+import Learn from './routes/learn/learn';
+import Quiz from './components/quiz/quiz';
 import "./blueprint.css";
 import "./App.css";
 
@@ -21,8 +23,14 @@ function App() {
           <Route path="/account">
             <Account />
           </Route>
-          <Route path="/">
-            <Account />
+          <Route path="/learn">
+            <Learn />
+          </Route>
+          <Route path="/recycling">
+            <Quiz 
+            type="Recycling"
+            description="Complete this quiz to earn 32 extra points"
+             />
           </Route>
         </Switch>
 
