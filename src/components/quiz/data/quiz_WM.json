@@ -1,0 +1,39 @@
+{
+    "questions": [
+        {
+            "id": "1",
+            "type": "radio",
+            "label": "How do you feel about the future of waste management?",
+            "answers": [
+                {
+                    "label": "Positive"
+                },
+                {
+                    "label": "Negative"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "type": "radio",
+            "label": "What do the 3 R's in waste disposal stand for?",
+            "answers": [
+                {
+                    "label": "Reorganise, Reuse, Recycle"
+                },
+                {
+                    "label": "Reduce, Reuse, Recycle"
+                },
+                {
+                    "label": "Reduce, Remake, Recycle"
+                }
+            ]
+        }
+    ],
+    "answers": [
+        {
+            "id": "1",
+            "answer": "Positive"
+        }
+    ]
+}

@@ -14,11 +14,11 @@ function Learn() {
             <h3>Local Challenges</h3>
             <div className="flex">
                 <Challenge
-                    name="Recycling 101"
+                    name="Managing Waste"
                     score="300"
                     total="15"
                     icon="refresh"
-                    link="/recycling"
+                    link="/waste-management"
                 />
                 <Challenge
                     name="Food Waste"

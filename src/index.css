@@ -58,6 +58,8 @@ a, a:link, a:hover {
 
 .bottomSpace {
   margin-bottom: 24px;
+  width: 100%;
+  display: block;
 }
 
 .clear {

@@ -1,33 +1,41 @@
 import React from 'react';
-// import { Radio, RadioGroup } from "@blueprintjs/core";
+import { Radio, RadioGroup } from "@blueprintjs/core";
 import { FormGroup, Slider, Button } from "@blueprintjs/core";
 import Complete from '../complete/complete';
 import "./quiz.css";
+import DATA from "./data/quiz_WM.json";
 
-function Quiz({ type, description, points }) {
-    // const [value, handleChange] = React.useState("one");
+function WMQuiz({ type, description, points }) {
+    const [value, handleChange] = React.useState("one");
     const [foodScraps, setFoodScraps] = React.useState(1);
     const [isComplete, setComplete] = React.useState(false);
-
+    const [questions, setQuestion] = React.useState(DATA.questions);
     return (
         <div className="Quiz">
-            {isComplete && <Complete points={points} isHidden={!isComplete}  />}
-            <h1>{type} Assessment</h1>
-            <p>Complete quiz for an extra {points} points</p>
-            <FormGroup
-                label="1. How well do you XYZ?"
-                labelFor="text-input"
-            >
-                <Slider
-                    min={0}
-                    max={10}
-                    stepSize={1}
-                    labelStepSize={1}
-                    onChange={(value) => setFoodScraps(value)}
-                    labelRenderer={(value) => value}
-                    value={foodScraps}
-                />
-            </FormGroup>
+            {isComplete && <Complete points={points} isHidden={!isComplete} />}
+            <h1>{type} Quiz</h1>
+            <p>Complete quiz for {points} points. Begin...</p>
+            <div className="bottomSpace" />
+            {questions.map((question, idx) => {
+                if (question.type === "radio") {
+                    const options = question.answers.map(answer => <Radio label={answer.label} value={answer.label} />)
+                    
+                    return (
+                        <>
+                        <RadioGroup
+                            inline="inline"
+                            label={`${idx+1}. ${question.label}`}
+                            name="group"
+                            onChange={(value) => {}}
+                            selectedValue={value}
+                        >
+                            {options}
+                        </RadioGroup>
+                        <div className="bottomSpace" />
+                        </>
+                    )
+                }
+            })}
             {/* <FormGroup
     label="How well do you XYZ?"
     labelFor="text-input"
@@ -69,9 +77,10 @@ function Quiz({ type, description, points }) {
                 <Radio label="Processed foods" value="two" />
                 <Radio label="Other" value="three" />
             </RadioGroup> */}
-            <Button onClick={() => setComplete(true)} type="submit" title="Submit assessment">Submit assessment</Button>
+            <div className="bottomSpace" />
+            <Button intent="success" onClick={() => setComplete(true)} type="submit" title="Submit assessment">Submit assessment</Button>
         </div>
     );
 }
 
-export default Quiz;
+export default WMQuiz;

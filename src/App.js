@@ -7,7 +7,7 @@ import {
 // common components
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
-import Quiz from './components/quiz/quiz';
+import WMQuiz from './components/quiz/WMQuiz';
 // pages
 import Profile from './routes/profile/profile';
 import Dashboard from './routes/me/dashboard';
@@ -56,12 +56,14 @@ function App() {
           <Route path="/explore">
             <Explore />
           </Route>
-          <Route path="/recycling">
-            <Quiz
-              type="Recycling"
+          <Route path="/waste-management">
+            <div className="container">
+            <WMQuiz
+              type="Waste Management"
               description="Complete this quiz to earn 32 extra points"
-              points={20}
+              points={200}
             />
+            </div>
           </Route>
           <Route path="/">
             <Dashboard
