@@ -21,16 +21,25 @@ import "./blueprint.css";
 import "./App.css";
 
 function App() {
+  const [userName, setUserName] = React.useState("Jane Smith");
+  const [title, setTitle] = React.useState("Zero Waste");
+  const [location, setLocation] = React.useState("Marrickville");
+  const [points, setPoints] = React.useState(200);
+
   return (
     <Router>
-      <Header />
+      <Header title={title} location={location} />
       <div className="content">
         <Switch>
           <Route path="/profile">
-            <Profile />
+            <Profile
+            userName={userName}
+            points={points}
+            location={location}
+            />
           </Route>
           <Route path="/about">
-            <About />
+            <About title={title} />
           </Route>
           
           <Route path="/timeline">
@@ -53,7 +62,9 @@ function App() {
             />
           </Route>
           <Route path="/">
-            <Dashboard />
+            <Dashboard
+            location={location}
+            />
           </Route>
         </Switch>
 

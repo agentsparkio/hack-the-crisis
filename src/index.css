@@ -35,6 +35,11 @@ a, a:link, a:hover {
   margin: 80px 24px 24px;
 }
 
+.container-wide {
+  text-align: center;
+  margin: 50px 0 24px;
+}
+
 .right {
   float: right;
 }

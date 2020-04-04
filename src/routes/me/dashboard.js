@@ -5,7 +5,7 @@ import Rewards from "./Rewards";
 import MyData from "./../profile/myData";
 import './dashboard.css';
 
-function Dashboard() {
+function Dashboard({ location }) {
   const [selectedTabId, selectTabId] = React.useState("MyData");
   const [newThingsShow, setNewThingsShow] = React.useState(true);
 
@@ -22,7 +22,7 @@ function Dashboard() {
             </Card>}
       <h1>Dashboard</h1>
       <MyData />
-      <h3>Local Offers</h3>
+      <h3>Local Offers from {location}</h3>
       <Rewards />
       <h3>Daily Challenges</h3>
       <Rewards />

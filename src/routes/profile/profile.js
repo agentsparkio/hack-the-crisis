@@ -1,17 +1,16 @@
 import React from 'react';
 import { Icon } from "@blueprintjs/core";
-import Badge from "../../components/badge/badge";
 import "./profile.css";
 
-function Profile() {
+function Profile({ location, points, userName }) {
     return (
         <div className="Profile">
             <div className="profile" />
             <div className="info">
-                <h2>Jane Smith</h2>
-                <div className="Profile__points">230</div>
+                <h2>{userName}</h2>
+                <div className="Profile__points">{points}</div>
                 <div className="Profile__pointsText">Green Points</div>
-        <Icon icon="geolocation" /> Testville, NSW
+        <Icon icon="geolocation" /> {location}
             </div>
         </div>
     );

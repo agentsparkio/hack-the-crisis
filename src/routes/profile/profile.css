@@ -1,3 +1,6 @@
+.Profile {
+    margin-top: 70px;
+}
 .Profile .profile {
     width: 100px;
     height: 100px;
@@ -25,7 +28,6 @@
     line-height: 1;
 
 }
-
 
 .Profile__pointsText {
     line-height: 1;
