@@ -3,32 +3,44 @@
         {
             "datetimestamp": "2020-09-02",
             "details": "Veggie Patch Badge",
-            "points": 340
+            "points": 340,
+            "badge": "star",
+            "colour": "gold"
         },
         {
             "datetimestamp": "2020-10-02",
             "details": "Green Badge",
-            "points": 400
+            "points": 400,
+            "badge": "star",
+            "colour": "gold"
         },
         {
             "datetimestamp": "2020-11-02",
             "details": "Captain Planet Badge",
-            "points": 500
+            "points": 500,
+            "badge": "star",
+            "colour": "#0099cc"
         },
         {
             "datetimestamp": "2020-09-02",
             "details": "Veggie Patch Badge",
-            "points": 660
+            "points": 660,
+            "badge": "star",
+            "colour": "gold"
         },
         {
             "datetimestamp": "2020-10-02",
             "details": "Green Badge",
-            "points": 770
+            "points": 770,
+            "badge": "star",
+            "colour": "limegreen"
         },
         {
             "datetimestamp": "2020-11-02",
             "details": "Captain Planet Badge",
-            "points": 900
+            "points": 900,
+            "badge": "star",
+            "colour": "gold"
         }
     ]
 }
