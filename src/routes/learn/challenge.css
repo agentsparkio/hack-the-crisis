@@ -1,22 +1,16 @@
 .Challenge {
-    width: 140px;
-    height: 140px;
-    background: lime;
-    border-radius: 140px;
-    border: 2px solid limegreen;
+    width: 180px;
+    height: 180px;
+    border-radius: 180px;
     text-align: center;
+    border: 2px solid limegreen;
+    background: white;
     display: block;
     float: left;
-    padding-top: 32px;
+    padding-top: 48px;
     margin-right: 24px;
     margin-bottom: 24px;
 }
-
-/* .Challenge:first-child {
-    display: block;
-    float: none !important;
-    margin: 0 auto 24px;
-} */
 
 .Challenge .name, 
 .Challenge .score {
@@ -27,7 +21,7 @@
     font-size: 0.7rem;
     font-weight: bold;
     margin: 0 auto 12px;
-    color: white;
+    color: limegreen;
 }
 
 .Challenge .total {
@@ -44,4 +38,15 @@
     width: auto;
     display: inline-block;
     margin-top: 12px auto;
+}
+
+
+.Challenge.complete {
+    background: lime;
+    border: 2px solid limegreen;
+}
+
+
+.Challenge.complete .name {
+    color: white;
 }

@@ -2,10 +2,12 @@
     padding: 24px;
     display: block;
 }
-
+.Learn__progress {
+    margin-bottom: 24px;
+}
 .Learn__dashboard {
     margin-bottom: 24px;
     text-align: center;
     font-family: CustomFontBold;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }

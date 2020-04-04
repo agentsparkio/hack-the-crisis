@@ -1,15 +1,15 @@
 import React from 'react';
-import { Button, Card, Elevation } from "@blueprintjs/core";
+import { ProgressBar, Card, Elevation } from "@blueprintjs/core";
 import Challenge from "./challenge";
-import Badge from "./../../components/badge/badge";
 import "./learn.css";
 
 function Learn() {
     return (
         <div className="Learn">
             <Card interactive={true} elevation={Elevation.TWO} className="Learn__dashboard">
-                <p>NEW CHALLENGES TODAY</p>
-                <p>450 / 500 GREEN POINTS STATUS BAR</p>
+                <p>NEW CHALLENGES THIS WEEK</p>
+                <ProgressBar intent="success" value={0.2} animate={true} stripes={false} className="Learn__progress" />
+                <p>You can complete the following challenges to redeem all points for this week.</p>
             </Card>
             <Challenge
                 name="Recycling 101"

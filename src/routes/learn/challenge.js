@@ -6,13 +6,15 @@ import {
 } from "react-router-dom";
 
 function Challenge({ name, score, total, icon, link }) {
-  return (
-    <Link activeClassName="active" to={link}>
-      <div className="Challenge">
-        <div className="name">{name} <Icon icon={icon} /></div>
+  const isComplete = score === total;
 
-        <div className="score">{score}</div>
-        <div className="total">{score} / {total} GP</div>
+  return (
+    <Link to={link}>
+      <div className={isComplete ? "Challenge" : "Challenge complete"}>
+        <div className="name">{name} <Icon icon={icon} /></div>
+        <div className="score">{score} GREEN POINTS</div>
+        {isComplete && <div className="total">COMPLETE</div>}
+        {!isComplete && <div className="total">{score} / {total} GP</div>}
       </div>
     </Link>
   );
