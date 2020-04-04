@@ -13,21 +13,21 @@
     color: limegreen !important;
 }
 
-.Header .bp3-navbar-group.bp3-align-right {
+/* .Header .bp3-navbar-group.bp3-align-right {
     width: 35%;
-}
+} */
 
-.Header__pointsRemain {
+/* .Header__pointsRemain {
     display: block;
     width: 100%;
     margin-left: 7px;
-}
-.Header__points {
+} */
+/* .Header__points {
     font-size: 0.6rem;
     letter-spacing: 2px;
     font-weight: bold;
     color: limegreen !important;
-}
+} */
 
 .Header .bp3-navbar {
     padding: 0;
