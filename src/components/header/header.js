@@ -6,9 +6,7 @@ import {
     Navbar,
     NavbarGroup,
     NavbarHeading,
-    ProgressBar
 } from "@blueprintjs/core";
-import Badge from "./../badge/badge";
 import {
     Link
 } from "react-router-dom";

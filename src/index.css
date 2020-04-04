@@ -1,11 +1,11 @@
 @font-face {
   font-family: CustomFont;
-  src: url("./AmaticSC-Regular.ttf");
+  src: url("/AmaticSC-Regular.ttf");
 }
 
 @font-face {
   font-family: CustomFontBold;
-  src: url("./AmaticSC-Bold.ttf");
+  src: url("/AmaticSC-Bold.ttf");
 }
 
 body {

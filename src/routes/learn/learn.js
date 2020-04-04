@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, Card, Elevation, Button } from "@blueprintjs/core";
+import { Alert } from "@blueprintjs/core";
 import Challenge from "./challenge";
 import "./learn.css";
 

@@ -1,7 +1,7 @@
 .Me .profile {
     width: 100px;
     height: 100px;
-    background-image: url(http://localhost:3000/profile.jpg);
+    background-image: url(profile.jpg);
     border-radius: 100px;
     margin: 20px auto;
 }

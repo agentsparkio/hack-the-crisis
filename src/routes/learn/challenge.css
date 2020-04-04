@@ -4,12 +4,17 @@
     border-radius: 31vh;
     text-align: center;
     border: 2px solid limegreen;
-    background: white;
+    background: lightgray;
     display: block;
     float: left;
     padding-top: 48px;
     margin-right: 24px;
     margin-bottom: 24px;
+}
+
+.Challenge__container {
+    background: yellow;
+    padding: 12px;
 }
 
 .Challenge .name, 
@@ -21,7 +26,7 @@
     font-size: 0.7rem;
     font-weight: bold;
     margin: 0 auto 12px;
-    color: limegreen;
+    color: #333;
 }
 
 .Challenge .total {
@@ -30,7 +35,6 @@
     text-transform: uppercase;
     font-size: 0.7rem;
     font-weight: bold;
-    color: white;
     background: limegreen;
     border-radius: 8px;
     padding: 4px;
@@ -42,11 +46,11 @@
 
 
 .Challenge.complete {
-    background: lime;
-    border: 2px solid limegreen;
+    background: white;
+    border: 2px dotted limegreen;
 }
 
 
 .Challenge.complete .name {
-    color: white;
+    color: #333;
 }
