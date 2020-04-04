@@ -1,32 +1,3 @@
 .Rewards {
-    margin: 24px;
 }
 
-
-.Rewards .bp3-card {
-    transition: 0.2s linear all;
-    padding: 12px;
-    min-height: 80px;
-    margin-bottom: 12px;
-}
-
-
-.Rewards .bp3-card:hover {
-    background: darkseagreen;
-}
-
-.Rewards .bp3-card h5 {
-    padding: 0;
-    margin: 12px 0 0 ;
-    text-align: center;
-    text-transform: uppercase;
-    display: inline-block;
-    width: 80%;
-}
-
-.Rewards h5 a:link, .Rewards h5 a:hover {
-    font-size: 1.2rem;
-    font-family: CustomFontBold;
-    color: darkgreen !important;
-    text-transform: none;
-}

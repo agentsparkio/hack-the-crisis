@@ -32,7 +32,7 @@ a, a:link, a:hover {
 }
 .container {
   text-align: center;
-  margin: 24px;
+  margin: 80px 24px 24px;
 }
 
 .right {
@@ -49,4 +49,30 @@ a, a:link, a:hover {
 
 .clear {
   clear: both;
+}
+
+
+.bottomMargin {
+  margin-bottom: 12px;
+}
+
+.leftMargin {
+  margin-left: 12px;
+}
+
+.rightMargin {
+  margin-right: 12px;
+}
+
+/* BPJS Overrides */
+.bp3-button {
+  box-shadow: 0 0 0 transparent !important;
+  height: 50px;
+  font-family: CustomFontBold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.bp3-button.bp3-intent-info {
+  color: #777;
+  background-color: #efefef;
 }

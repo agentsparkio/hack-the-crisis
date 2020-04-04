@@ -1,0 +1,42 @@
+.Article__image {
+    background-size: contain;
+    width: 180px;
+    background-repeat: no-repeat;
+    height: 120px;
+    display: block;
+    float: left;
+    background-position: left top;
+}
+
+.Article .bp3-card {
+    padding: 0;
+    transition: 0.2s linear all;
+    height: 120px;
+    margin-bottom: 12px;
+}
+
+.Article__content {
+    display: inline-block;
+    width: calc(100% - 220px);
+}
+.Article h5 {
+    padding: 0;
+    margin: 12px 0 6px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.Article__desc {
+    display: inline-block;
+    float: left;
+    text-align: left;
+}
+
+.Article h5 a:link, .Rewards h5 a:hover {
+    font-size: 1.2rem;
+    font-family: CustomFontBold;
+    color: darkgreen !important;
+}
+.Article .bp3-card:hover {
+    background: lightgoldenrodyellow;
+}

@@ -4,18 +4,18 @@ import { Icon } from "@blueprintjs/core";
 import {
   Link
 } from "react-router-dom";
+import Badge from "../../components/badge/badge";
 
-function Challenge({ name, score, total, icon, link }) {
+function Challenge({ name, score, total, icon, link, theme }) {
   const isComplete = score === total;
 
   return (
-    <Link to={link} className="Challenge__container">
-      <div className={isComplete ? "Challenge" : "Challenge complete"}>
-        <div className="name">{name} <Icon icon={icon} /></div>
-        <div className="score">{score} GREEN POINTS</div>
-        {isComplete && <div className="total">COMPLETE</div>}
-        {!isComplete && <div className="total">{score} / {total} GP</div>}
-      </div>
+    <Link to={link} className={isComplete ? `Challenge ${theme}` : `Challenge complete ${theme}`}>
+        <div className="name">{name}</div>
+        <Icon icon={icon} className="bottomMargin Challenge__icon" />
+        <div className="clear" />
+        {isComplete && <div className="total complete">COMPLETE</div>}
+        {!isComplete && <div className="total">{score} GREEN POINTS</div>}
     </Link>
   );
 }

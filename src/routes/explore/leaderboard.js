@@ -1,5 +1,5 @@
 import React from 'react';
-import Heatmap from "./../../components/heatmap/index";
+// import Heatmap from "./../../components/heatmap/index";
 
 function Leaderboard() {
     return (

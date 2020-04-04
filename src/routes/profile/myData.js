@@ -1,11 +1,13 @@
 import React from 'react';
+import { Card } from "@blueprintjs/core";
 import "./myData.css";
 
 function MyData() {
     return (
         <div className="MyData container">
-            <h2>My Data</h2>
-            <p>View your waste management statistics</p>
+            <Card>
+                <h2>You have no data yet :(</h2>
+            </Card>
         </div>
     );
 }
