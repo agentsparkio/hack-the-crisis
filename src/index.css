@@ -29,3 +29,7 @@ code {
 .left {
   float: left;
 }
+
+.bottomSpace {
+  margin-bottom: 24px;
+}

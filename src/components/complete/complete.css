@@ -1,0 +1,52 @@
+.Complete {
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    text-align: center;
+    padding: 24px;
+}
+.Complete__pointsContainer {
+    margin-top: 25%;
+    position: relative;
+    z-index: 10;
+}
+
+.Complete__pointsStack {
+    display: inline-block;
+}
+.Complete__points {
+    font-weight: bold;
+    font-size: 4rem;
+    display: block;
+}
+
+.Complete__pointsTxt {
+    margin-top: 25%;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.Complete__pointsBrackets {
+    font-weight: bold;
+    font-size: 8rem;
+    color: limegreen;
+    display: inline;
+}
+
+.Complete__wohoo {
+    position: fixed;
+    bottom: 24px;
+    width: calc(100% - 48px);
+    left: 24px;
+    background-color: limegreen !important;
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 24px !important;
+    z-index: 10;
+    color: white !important;
+}

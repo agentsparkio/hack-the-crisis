@@ -1,16 +1,19 @@
 import React from 'react';
 // import { Radio, RadioGroup } from "@blueprintjs/core";
 import { FormGroup, Slider, Button } from "@blueprintjs/core";
+import Complete from './../complete/complete';
 import "./quiz.css";
 
-function Quiz({ type, description }) {
+function Quiz({ type, description, points }) {
     // const [value, handleChange] = React.useState("one");
     const [foodScraps, setFoodScraps] = React.useState(1);
+    const [isComplete, setComplete] = React.useState(false);
 
     return (
         <div className="Quiz">
+            {isComplete && <Complete points={points} isHidden={!isComplete}  />}
             <h1>{type} Assessment</h1>
-            <p>{description}</p>
+            <p>Complete quiz for an extra {points} points</p>
             <FormGroup
                 label="1. How well do you XYZ?"
                 labelFor="text-input"
@@ -66,7 +69,7 @@ function Quiz({ type, description }) {
                 <Radio label="Processed foods" value="two" />
                 <Radio label="Other" value="three" />
             </RadioGroup> */}
-            <Button type="submit" title="Submit assessment">Submit assessment</Button>
+            <Button onClick={() => setComplete(true)} type="submit" title="Submit assessment">Submit assessment</Button>
         </div>
     );
 }

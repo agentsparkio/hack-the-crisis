@@ -21,14 +21,14 @@ function Header() {
                 <NavbarGroup align={Alignment.LEFT}>
                     <Icon icon={IconNames.HEATMAP} />
                     <NavbarHeading>
-                    <Link to="/"><h1>eConnect</h1></Link>
+                    <Link to="/"><h1>Garbage Pride</h1></Link>
                     </NavbarHeading>
                 </NavbarGroup>
-                <NavbarGroup align={Alignment.RIGHT} className="Header__points">
+                {/* <NavbarGroup align={Alignment.RIGHT} className="Header__points">
                     <ProgressBar value={0.6} stripes={false} />
                     <Link to="/learn"><div className="Header__pointsRemain">EARN 400 MORE GP</div></Link>
                     
-                </NavbarGroup>
+                </NavbarGroup> */}
             </Navbar>
         </header>
     );

@@ -2,6 +2,9 @@
     width: 100%;
 }
 
+.Header .bp3-navbar {
+    background: #333;
+}
 .Header h1 {
     font-family: CustomFontBold;
     font-size: 2.5rem;

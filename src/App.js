@@ -20,11 +20,9 @@ function App() {
   return (
     <Router>
       <Header />
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
       <div className="content">
         <Switch>
-      
+
           <Route path="/me">
             <Account />
           </Route>
@@ -35,13 +33,15 @@ function App() {
             <Explore />
           </Route>
           <Route path="/recycling">
-            <Quiz 
-            type="Recycling"
-            description="Complete this quiz to earn 32 extra points"
-             />
+            <Quiz
+              type="Recycling"
+              description="Complete this quiz to earn 32 extra points"
+              points={20}
+            />
           </Route>
           <Route path="/">
             <Account />
+
           </Route>
         </Switch>
 

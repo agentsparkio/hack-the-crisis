@@ -17,3 +17,7 @@
     font-family: CustomFontBold;
     font-size: 1.2rem;
 }
+
+.Learn h1, p {
+    text-align: center;
+}

@@ -9,3 +9,8 @@
     left: 30%;
     top: 31%;
 }
+
+.Achievement__points {
+    position: relative;
+    top: -10px;
+}

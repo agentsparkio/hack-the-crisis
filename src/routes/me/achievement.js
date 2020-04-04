@@ -6,6 +6,7 @@ import {
 import './timeline.min.css';
 import stubData from "./achievements.json";
 import "./achievement.css";
+import Badge from "../../components/badge/badge";
 
 function Achievement() {
   return (
@@ -20,11 +21,9 @@ function Achievement() {
                 iconStyle={{ background: '#efefef', color: `${event.colour}` }}
                 icon={<Icon icon={event.badge} />}
               >
-                <h3 className="vertical-timeline-element-title">{event.details}</h3>
-                <h4 className="vertical-timeline-element-subtitle">{event.points} GREEN POINTS</h4>
-                <p>
-                  Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-            </p>
+                <h3 className="vertical-timeline-element-title">{event.details}
+                <div className="right Achievement__points"><Badge points={event.points} /></div>
+                </h3>
               </VerticalTimelineElement>
             ))}
       }

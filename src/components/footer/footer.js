@@ -7,7 +7,7 @@ import {
     NavbarGroup,
 } from "@blueprintjs/core";
 import {
-    Link
+    NavLink
 } from "react-router-dom";
 import "./footer.css";
 
@@ -17,9 +17,9 @@ function Footer() {
             <Navbar>
                 <NavbarGroup align={Alignment.CENTER}>
                     {/** FIXME: Active Styles */}
-                    <Link activeClassName="active" to="/me"><Button className={Classes.MINIMAL} icon="user" text="Me" /></Link>
-                    <Link activeClassName="active" to="/learn"><Button className={Classes.MINIMAL} icon="trending-up" text="Learn" /></Link>
-                    <Link activeClassName="active" to="/explore"><Button className={Classes.MINIMAL} icon="layout" text="Explore" /></Link>
+                    <NavLink exact activeClassName="active" to="/me"><Button className={Classes.MINIMAL} icon="user" text="Me" /></NavLink>
+                    <NavLink exact activeClassName="active" to="/learn"><Button className={Classes.MINIMAL} icon="heart" text="Learn" /></NavLink>
+                    <NavLink exact activeClassName="active" to="/explore"><Button className={Classes.MINIMAL} icon="layout" text="Explore" /></NavLink>
                 </NavbarGroup>
             </Navbar>
         </footer>

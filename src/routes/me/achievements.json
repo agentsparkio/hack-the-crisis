@@ -12,7 +12,7 @@
             "details": "Green Badge",
             "points": 400,
             "badge": "tree",
-            "colour": "limegreen"
+            "colour": "darkgreen"
         },
         {
             "datetimestamp": "2020-11-02",
@@ -26,14 +26,14 @@
             "details": "Greta Thunberg Unlocked",
             "points": 2200,
             "badge": "star",
-            "colour": "green"
+            "colour": "purple"
         },
         {
             "datetimestamp": "2020-10-02",
             "details": "Green Thumb Challenge",
             "points": 2800,
             "badge": "star",
-            "colour": "limegreen"
+            "colour": "pink"
         },
         {
             "datetimestamp": "2020-11-02",
