@@ -1,4 +1,8 @@
 .Explore .bp3-tab {
     width:50%;
-text-align: center;
+    text-align: center;
+}
+
+.Explore .bp3-tab-panel {
+    margin-top: 0;
 }

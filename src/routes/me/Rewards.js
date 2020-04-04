@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Card, Elevation } from "@blueprintjs/core";
-import Badge from "./../components/badge/badge";
+import Badge from "../../components/badge/badge";
 import "./Rewards.css";
 
 function Rewards() {

@@ -1,0 +1,34 @@
+{
+    "achievements": [
+        {
+            "datetimestamp": "2020-09-02",
+            "details": "Veggie Patch Badge",
+            "points": 340
+        },
+        {
+            "datetimestamp": "2020-10-02",
+            "details": "Green Badge",
+            "points": 400
+        },
+        {
+            "datetimestamp": "2020-11-02",
+            "details": "Captain Planet Badge",
+            "points": 500
+        },
+        {
+            "datetimestamp": "2020-09-02",
+            "details": "Veggie Patch Badge",
+            "points": 660
+        },
+        {
+            "datetimestamp": "2020-10-02",
+            "details": "Green Badge",
+            "points": 770
+        },
+        {
+            "datetimestamp": "2020-11-02",
+            "details": "Captain Planet Badge",
+            "points": 900
+        }
+    ]
+}

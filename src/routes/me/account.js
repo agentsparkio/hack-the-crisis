@@ -2,7 +2,7 @@ import React from 'react';
 import { Tab, Tabs } from "@blueprintjs/core";
 import Achievement from "./achievement";
 import Rewards from "./Rewards";
-import Badge from "./../components/badge/badge";
+import Badge from "../../components/badge/badge";
 import './Account.css';
 
 function Account() {

@@ -7,7 +7,7 @@ function Learn() {
     return (
         <div className="Learn">
             <Card interactive={true} elevation={Elevation.TWO} className="Learn__dashboard">
-                <p>NEW CHALLENGES THIS WEEK</p>
+                <p>NEW CHALLENGES THIS WEEK. Earn 800 more points to get to 1000 points.</p>
                 <ProgressBar intent="success" value={0.2} animate={true} stripes={false} className="Learn__progress" />
                 <p>You can complete the following challenges to redeem all points for this week.</p>
             </Card>

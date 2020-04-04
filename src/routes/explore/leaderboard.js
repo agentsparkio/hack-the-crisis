@@ -1,10 +1,10 @@
 import React from 'react';
+import Heatmap from "./../../components/heatmap/index";
 
 function Leaderboard() {
     return (
-        <div className="Community">
-            Leaderboard TODO: Data and map
-            
+        <div className="Leaderboard">
+            <Heatmap />
         </div>
     );
 }

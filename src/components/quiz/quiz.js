@@ -12,10 +12,10 @@ function Quiz({ type, description }) {
             <h1>{type} Assessment</h1>
             <p>{description}</p>
             <FormGroup
-    label="1. How well do you XYZ?"
-    labelFor="text-input"
->
-<Slider
+                label="1. How well do you XYZ?"
+                labelFor="text-input"
+            >
+                <Slider
                     min={0}
                     max={10}
                     stepSize={1}
@@ -24,64 +24,8 @@ function Quiz({ type, description }) {
                     labelRenderer={(value) => value}
                     value={foodScraps}
                 />
-</FormGroup>
-<FormGroup
-    label="2. How well do you XYZ?"
-    labelFor="text-input"
->
-<Slider
-                    min={0}
-                    max={10}
-                    stepSize={1}
-                    labelStepSize={1}
-                    onChange={(value) => setFoodScraps(value)}
-                    labelRenderer={(value) => value}
-                    value={foodScraps}
-                />
-</FormGroup>
-<FormGroup
-    label="How well do you XYZ?"
-    labelFor="text-input"
->
-<Slider
-                    min={0}
-                    max={10}
-                    stepSize={1}
-                    labelStepSize={1}
-                    onChange={(value) => setFoodScraps(value)}
-                    labelRenderer={(value) => value}
-                    value={foodScraps}
-                />
-</FormGroup>
-<FormGroup
-    label="3. How well do you XYZ?"
-    labelFor="text-input"
->
-<Slider
-                    min={0}
-                    max={10}
-                    stepSize={1}
-                    labelStepSize={1}
-                    onChange={(value) => setFoodScraps(value)}
-                    labelRenderer={(value) => value}
-                    value={foodScraps}
-                />
-</FormGroup>
-<FormGroup
-    label="4. How well do you XYZ?"
-    labelFor="text-input"
->
-<Slider
-                    min={0}
-                    max={10}
-                    stepSize={1}
-                    labelStepSize={1}
-                    onChange={(value) => setFoodScraps(value)}
-                    labelRenderer={(value) => value}
-                    value={foodScraps}
-                />
-</FormGroup>
-{/* <FormGroup
+            </FormGroup>
+            {/* <FormGroup
     label="How well do you XYZ?"
     labelFor="text-input"
 >
@@ -112,7 +56,7 @@ function Quiz({ type, description }) {
                 />
 </FormGroup> */}
 
-{/* <RadioGroup
+            {/* <RadioGroup
                 label="Biggest proportion of food scraps?"
                 name="group"
                 onChange={(value) => handleChange(value)}

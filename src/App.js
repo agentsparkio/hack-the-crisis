@@ -9,7 +9,7 @@ import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import Quiz from './components/quiz/quiz';
 // pages
-import Account from './routes/account';
+import Account from './routes/me/account';
 import Explore from './routes/explore/explore';
 import Learn from './routes/learn/learn';
 
@@ -39,6 +39,9 @@ function App() {
             type="Recycling"
             description="Complete this quiz to earn 32 extra points"
              />
+          </Route>
+          <Route path="/">
+            <Account />
           </Route>
         </Switch>
 
