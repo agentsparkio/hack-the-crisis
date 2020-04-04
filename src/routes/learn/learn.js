@@ -14,49 +14,25 @@ function Learn() {
                 <Challenge
                     name="Managing Waste"
                     score="300"
-                    total="15"
+                    total="400"
                     icon="refresh"
                     link="/waste-management"
                 />
                 <Challenge
                     name="Food Waste"
                     score="300"
-                    total="15"
+                    total="400"
                     icon="tree"
                     link=""
                 />
                 <Challenge
                     name="Compost Challenge"
-                    score="300"
-                    total="15"
+                    score="400"
+                    total="400"
                     icon="heatmap"
                 />
             </div>
             <div className="clear" />
-            <h3>National Challenges</h3>
-            <div className="flex">
-                {/* <Challenge
-                name="Covid O War"
-                score="12"
-                total="15"
-                icon="heatmap"
-                theme="COVID19"
-            /> */}
-            <Challenge
-                name="Donations to Red Cross"
-                score="12"
-                total="15"
-                icon="plus"
-                theme="RED"
-            />
-            <Challenge
-                name="Donations to Salvos"
-                score="12"
-                total="15"
-                icon="plus"
-                theme="RED"
-            />
-            </div>
         </div>
     );
 }

@@ -16,8 +16,6 @@
 
 }
 
-.Challenge div { box-sizing: border-box; }
-
 .Challenge.complete {
     border-style: solid;
 }
@@ -72,11 +70,9 @@
     background: limegreen;
 }
 
-
 .Challenge.complete .name {
     color: #333;
 }
-
 
 /* CUSTOM CHALLENGES */
 .Challenge.RED {

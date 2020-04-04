@@ -4,6 +4,7 @@ import { Card, Button } from "@blueprintjs/core";
 import Rewards from "./Rewards";
 import MyData from "./../profile/myData";
 import './dashboard.css';
+import Challenge from "./../learn/challenge";
 
 function Dashboard({ location }) {
   const [selectedTabId, selectTabId] = React.useState("MyData");
@@ -20,12 +21,33 @@ function Dashboard({ location }) {
                     </p>
                     
             </Card>}
-      <h1>Dashboard</h1>
-      <MyData />
+      <h1>Get active</h1>
       <h3>Local Offers from {location} <Icon icon="geolocation" /></h3>
       <Rewards />
-      {/* <h3>Daily Challenges</h3>
-      <Rewards /> */}
+      <h3>National Challenges</h3>
+            <div className="flex">
+                <Challenge
+                name="Covid O War"
+                score="500"
+                total="1500"
+                icon="heatmap"
+                theme="COVID19"
+            />
+            <Challenge
+                name="Red Cross Donate"
+                score="120"
+                total="1500"
+                icon="plus"
+                theme="RED"
+            />
+            <Challenge
+                name="Salvos Donate"
+                score="12"
+                total="1500"
+                icon="plus"
+                theme="RED"
+            />
+            </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@ function Challenge({ name, score, total, icon, link, theme }) {
   const isComplete = score === total;
 
   return (
-    <Link to={link} className={isComplete ? `Challenge ${theme}` : `Challenge complete ${theme}`}>
+    <Link to={link} className={isComplete ? `Challenge ${theme} complete` : `Challenge ${theme}`}>
         <div className="name">{name}</div>
         <Icon icon={icon} className="bottomMargin Challenge__icon" />
         <div className="clear" />

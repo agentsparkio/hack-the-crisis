@@ -27,7 +27,7 @@ code {
     monospace;
 }
 a, a:link, a:hover {
-  color: limegreen;
+  color: limegreen !important;
   text-decoration: none !important;
 }
 .container {
