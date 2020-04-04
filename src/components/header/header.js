@@ -6,6 +6,7 @@ import {
     Navbar,
     NavbarGroup,
     NavbarHeading,
+    ProgressBar
 } from "@blueprintjs/core";
 import Badge from "./../badge/badge";
 import {
@@ -18,12 +19,15 @@ function Header() {
         <header className="Header">
             <Navbar>
                 <NavbarGroup align={Alignment.LEFT}>
+                    <Icon icon={IconNames.HEATMAP} />
                     <NavbarHeading>
-                        <Link to="/"><Icon icon={IconNames.HEATMAP} /> eConnect</Link>
+                    <Link to="/"><h1>eConnect</h1></Link>
                     </NavbarHeading>
                 </NavbarGroup>
-                <NavbarGroup align={Alignment.RIGHT}>
-                <Badge points="20" />
+                <NavbarGroup align={Alignment.RIGHT} className="Header__points">
+                    <ProgressBar value={0.6} stripes={false} />
+                    <Link to="/learn"><div className="Header__pointsRemain">EARN 400 MORE GP</div></Link>
+                    
                 </NavbarGroup>
             </Navbar>
         </header>

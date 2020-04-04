@@ -6,7 +6,7 @@ import Badge from "../../components/badge/badge";
 import './Account.css';
 
 function Account() {
-  const [selectedTabId, selectTabId] = React.useState("Rewards");
+  const [selectedTabId, selectTabId] = React.useState("Achievement");
 
   return (
     <div className="Me">

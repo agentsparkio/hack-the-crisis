@@ -8,6 +8,12 @@
 .Learn__dashboard {
     margin-bottom: 24px;
     text-align: center;
+    font-size: 0.8rem;
+}
+
+.Learn__dashboardHeader {
+    margin-bottom: 24px;
+    text-align: center;
     font-family: CustomFontBold;
     font-size: 1.2rem;
 }
