@@ -1,7 +1,4 @@
 .Challenge {
-    width: 31vh;
-    height: 31vh;
-    border-radius: 31vh;
     text-align: center;
     border-width: 2px;
     border-style: dotted;
@@ -9,10 +6,17 @@
     background: white;
     display: block;
     float: left;
-    padding-top: 48px;
-    margin-right: 24px;
+    padding-top: 36px;
+    margin-right: 0.5em;
     margin-bottom: 24px;
+    flex: 1;
+    border-radius: 1000px;
+    height: 200px;
+    width: 200px;
+
 }
+
+.Challenge div { box-sizing: border-box; }
 
 .Challenge.complete {
     border-style: solid;
@@ -23,7 +27,20 @@
     height: 42px;
 }
 
-.Challenge .name, 
+.Challenge .name {
+    text-align: center;
+    display: block;
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 auto 12px;
+    font-family: CustomFontBold;
+    background: -webkit-linear-gradient(limegreen, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .Challenge .score {
     text-align: center;
     display: block;
@@ -48,7 +65,7 @@
     color: white;
     width: auto;
     display: inline-block;
-    margin-top: 12px auto;
+    margin: 12px auto;
 }
 
 .Challenge .total.complete {
@@ -62,10 +79,20 @@
 
 
 /* CUSTOM CHALLENGES */
-.Challenge.COVID19 {
+.Challenge.RED {
     border-color: red !important;
 }
 
-.Challenge.COVID19 svg {
+.Challenge.RED {
+    border-color: red !important;
+}
+
+.Challenge.RED svg {
     color: red !important;
+}
+
+.Challenge.RED .name {
+    background: -webkit-linear-gradient(red, darkred);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -46,7 +46,9 @@ function App() {
             <Achievement />
           </Route>
           <Route path="/my-data">
+            <div className="container">
             <MyData />
+            </div>
           </Route>
           <Route path="/learn">
             <Learn />

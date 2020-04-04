@@ -50,11 +50,11 @@ function GPBadge({ points, icon }) {
   
   return (
     <div className={`Badge ${type}`}>
-      <Button className={`${Classes.MINIMAL} `}>
+      <div className={`${Classes.MINIMAL} `}>
       {type === "points" && pointsIcon}
       {icon && <Icon icon={icon} />}
       <span className="Badge__text">{points} {type === "points" ? "Green Points" : ""}</span>
-      </Button>
+      </div>
     </div >
   );
 }

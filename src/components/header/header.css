@@ -3,6 +3,7 @@
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 1000;
 }
 
 .Header .bp3-navbar {
@@ -16,17 +17,15 @@
     text-transform: uppercase;
     color: limegreen !important;
     display: inline-block;
-}
-
-.Header__tag {
-    display: inline-block;
-    color: #777;
-    font-family: CustomFont;
-    text-transform: uppercase;
+    background: -webkit-linear-gradient(limegreen, lime);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (max-width: 600px) {           
-    .Header__location {
+    .Header__location,
+    .Header__tag
+    {
         display: none;
     }
 }
@@ -35,6 +34,13 @@
     .Header__location {
         color: limegreen;
     }
+    .Header__tag {
+        display: inline-block;
+        color: #777;
+        font-family: CustomFont;
+        text-transform: uppercase;
+    }
+    
 }
 
 

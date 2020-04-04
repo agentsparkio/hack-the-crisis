@@ -12,29 +12,32 @@ function Learn() {
             <p>The more you learn, the more green points you earn.</p>
             {/* <p><Link to="/about"><Button icon="share" >Learn more about Wasteful ></Button></Link></p> */}
             <h3>Local Challenges</h3>
-            <Challenge
-                name="Recycling 101"
-                score="3"
-                total="15"
-                icon="refresh"
-                link="/recycling"
-            />
-            <Challenge
-                name="Food Waste"
-                score="3"
-                total="15"
-                icon="tree"
-                link=""
-            />
-            <Challenge
-                name="Compost Challenge"
-                score="15"
-                total="15"
-                icon="heatmap"
-            />
+            <div className="flex">
+                <Challenge
+                    name="Recycling 101"
+                    score="300"
+                    total="15"
+                    icon="refresh"
+                    link="/recycling"
+                />
+                <Challenge
+                    name="Food Waste"
+                    score="300"
+                    total="15"
+                    icon="tree"
+                    link=""
+                />
+                <Challenge
+                    name="Compost Challenge"
+                    score="300"
+                    total="15"
+                    icon="heatmap"
+                />
+            </div>
             <div className="clear" />
             <h3>National Challenges</h3>
-            {/* <Challenge
+            <div className="flex">
+                {/* <Challenge
                 name="Covid O War"
                 score="12"
                 total="15"
@@ -46,15 +49,16 @@ function Learn() {
                 score="12"
                 total="15"
                 icon="plus"
-                theme="COVID19"
+                theme="RED"
             />
             <Challenge
                 name="Donations to Salvos"
                 score="12"
                 total="15"
                 icon="plus"
-                theme="COVID19"
+                theme="RED"
             />
+            </div>
         </div>
     );
 }

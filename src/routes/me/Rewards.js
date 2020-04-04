@@ -10,17 +10,17 @@ function Rewards() {
       <Article
         title="15% off Wine at Marrickville Fish n Chip Takeout"
         description="Save 20% off all sustainable and organically grown food. Voucher Code: 666. "
-        image="hand-hold-show-recyclable-plastic-600w-612750737.webp"
+        image="leisure-people-technology-concept-happy-couple-laptop-computer-takeaway-pizza-drinking-red-wine-home-happy-151690785.jpg"
         />
       <Article
         title="Glebe Cruelty Free Shop 20% off"
         description="Save 20% off all sustainable and organically grown food. "
-        image="trash-recycle-reduce-ecology-environment-600w-731239045.webp"
+        image="healthy-organic-food-apple-cider-vinegar-juice-glass-bottle-fresh-red-apples-healthy-organic-food-apple-cider-vinegar-153750037.jpg"
         />
       <Article
         title="Devil By Design 6.66% off"
         description="Save 20% off all sustainable and organically grown food. Voucher Code: 666. "
-        image="plastic-bottle-garbage-recycling-concept-600w-698172910.webp"
+        image="online-order-grocery-shopping-concept-food-delivery-ingredients-service-home-cooking-packages-box-icon-media-152464079.jpg"
         />
         
     </div>

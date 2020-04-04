@@ -1,5 +1,5 @@
 .vertical-timeline {
-    border-left: 5px solid #efefef;
+    border-left: 1px solid #ccc;
     width: 80%;
 }
 
@@ -17,9 +17,18 @@
     color: #333;
 }
 
-.Achievement__points {
-    position: relative;
-    top: -10px;
+.Achievement .vertical-timeline-element-content {
+    padding: 0;
+    box-shadow: 0 0 0 transparent;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.Achievement h3 {
+    margin-top: 0;
+}
+.Achievement__points .Badge {
+    margin: 0 !important;
 }
 
 .Achievement .Badge.badge {

@@ -15,7 +15,7 @@ function Challenge({ name, score, total, icon, link, theme }) {
         <Icon icon={icon} className="bottomMargin Challenge__icon" />
         <div className="clear" />
         {isComplete && <div className="total complete">COMPLETE</div>}
-        {!isComplete && <div className="total">{score} GREEN POINTS</div>}
+        {!isComplete && <Badge points={score} />}
     </Link>
   );
 }

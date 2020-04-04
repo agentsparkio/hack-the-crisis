@@ -44,6 +44,14 @@ a, a:link, a:hover {
   float: right;
 }
 
+.flex {
+  display: flex;
+    justify-content: center;
+  align-content: flex-start;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
 .left {
   float: left;
 }

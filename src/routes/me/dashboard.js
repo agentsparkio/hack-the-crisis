@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tab, Tabs } from "@blueprintjs/core";
+import { Icon } from "@blueprintjs/core";
 import { Card, Button } from "@blueprintjs/core";
 import Rewards from "./Rewards";
 import MyData from "./../profile/myData";
@@ -22,10 +22,10 @@ function Dashboard({ location }) {
             </Card>}
       <h1>Dashboard</h1>
       <MyData />
-      <h3>Local Offers from {location}</h3>
+      <h3>Local Offers from {location} <Icon icon="geolocation" /></h3>
       <Rewards />
-      <h3>Daily Challenges</h3>
-      <Rewards />
+      {/* <h3>Daily Challenges</h3>
+      <Rewards /> */}
     </div>
   );
 }

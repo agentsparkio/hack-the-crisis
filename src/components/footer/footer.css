@@ -20,10 +20,28 @@
 .footer a:visited .bp3-button-text {
     text-transform: uppercase;
     font-weight: bold;
-    color: white;
     letter-spacing: 2px;
+    background: -webkit-linear-gradient(lightgreen, darkgreen);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+.footer a.active .bp3-button-text
+ {
+    color: white !important;
+    background: -webkit-linear-gradient(#cccccc, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {           
+    .footer a .bp3-button-text,
+    .footer a:link .bp3-button-text,
+    .footer a:visited .bp3-button-text {
+        font-size: 0.7rem;
+    }
+}
 .footer button {
     display: block;
     margin: auto;
@@ -33,8 +51,7 @@
     fill: limegreen !important;
 }
 
-.footer a.active .bp3-button-text
- {
-    color: limegreen !important;
-    text-decoration: none;
+
+.footer  a.active svg {
+    fill: lime !important;
 }
