@@ -2,3 +2,10 @@
     padding: 24px;
     display: block;
 }
+
+.Learn__dashboard {
+    margin-bottom: 24px;
+    text-align: center;
+    font-family: CustomFontBold;
+    font-size: 2rem;
+}

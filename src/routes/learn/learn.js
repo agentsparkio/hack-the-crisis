@@ -1,11 +1,16 @@
 import React from 'react';
+import { Button, Card, Elevation } from "@blueprintjs/core";
 import Challenge from "./challenge";
+import Badge from "./../../components/badge/badge";
 import "./learn.css";
 
 function Learn() {
     return (
         <div className="Learn">
-            <p>Dashboard: Earn 100 extra GP today by doing the following challenges: </p>
+            <Card interactive={true} elevation={Elevation.TWO} className="Learn__dashboard">
+                <p>NEW CHALLENGES TODAY</p>
+                <p>450 / 500 GREEN POINTS STATUS BAR</p>
+            </Card>
             <Challenge
                 name="Recycling 101"
                 score="3"
