@@ -7,12 +7,25 @@ function Rewards() {
   return (
     <div className="Rewards">
       <Card interactive={true} elevation={Elevation.TWO}>
-        <h5><Badge points="20" />
-          <a href="http://www.test.com">Cruelty Free Shop</a>
-          <span className="right">20% off</span>
+      <div className="left"><Badge points="20" /></div>
+        <h5>
+          <a href="http://www.test.com">Cruelty Free Shop 10% off</a>
+          <Button className="right" intent="success">REDEEM REWARD</Button>
         </h5>
-        <p>Get a discount of 25% for XYZ</p>
-        <Button>REDEEM</Button>
+      </Card>
+      <Card interactive={true} elevation={Elevation.TWO}>
+      <div className="left"><Badge points="20" /></div>
+        <h5>
+          <a href="http://www.test.com">Nut Grocer Online Shop 10% off</a>
+          <Button className="right" intent="success">REDEEM REWARD</Button>
+        </h5>
+      </Card>
+      <Card interactive={true} elevation={Elevation.TWO}>
+      <div className="left"><Badge points="20" /></div>
+        <h5>
+          <a href="http://www.test.com">50% off reuseable containers</a>
+          <Button className="right" intent="success">REDEEM REWARD</Button>
+        </h5>
       </Card>
     </div>
   );

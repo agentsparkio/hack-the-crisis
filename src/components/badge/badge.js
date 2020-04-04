@@ -8,7 +8,7 @@ import {
 function GPBadge({ points }) {
   return (
     <div className="Badge">
-        <Button className={`${Classes.MINIMAL} GreenPointBadge`} icon="tree" text={`${points} green points`} />
+        <Button className={`${Classes.MINIMAL} GreenPointBadge`} icon="tree" text={`${points} GP`} />
     </div>
   );
 }

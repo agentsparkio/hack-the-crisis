@@ -4,43 +4,43 @@
             "datetimestamp": "2020-09-02",
             "details": "Veggie Patch Badge",
             "points": 340,
-            "badge": "star",
+            "badge": "heatmap",
             "colour": "gold"
         },
         {
             "datetimestamp": "2020-10-02",
             "details": "Green Badge",
             "points": 400,
-            "badge": "star",
-            "colour": "gold"
-        },
-        {
-            "datetimestamp": "2020-11-02",
-            "details": "Captain Planet Badge",
-            "points": 500,
-            "badge": "star",
-            "colour": "#0099cc"
-        },
-        {
-            "datetimestamp": "2020-09-02",
-            "details": "Veggie Patch Badge",
-            "points": 660,
-            "badge": "star",
-            "colour": "gold"
-        },
-        {
-            "datetimestamp": "2020-10-02",
-            "details": "Green Badge",
-            "points": 770,
-            "badge": "star",
+            "badge": "tree",
             "colour": "limegreen"
         },
         {
             "datetimestamp": "2020-11-02",
             "details": "Captain Planet Badge",
-            "points": 900,
+            "points": 500,
+            "badge": "globe",
+            "colour": "#0099cc"
+        },
+        {
+            "datetimestamp": "2020-09-02",
+            "details": "Greta Thunberg Unlocked",
+            "points": 2200,
             "badge": "star",
-            "colour": "gold"
+            "colour": "green"
+        },
+        {
+            "datetimestamp": "2020-10-02",
+            "details": "Green Thumb Challenge",
+            "points": 2800,
+            "badge": "star",
+            "colour": "limegreen"
+        },
+        {
+            "datetimestamp": "2020-11-02",
+            "details": "COVID-19 Challenge",
+            "points": 900,
+            "badge": "lightbulb",
+            "colour": "red"
         }
     ]
 }
