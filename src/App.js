@@ -4,11 +4,15 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+// common components
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
-import Account from './routes/account';
-import Learn from './routes/learn/learn';
 import Quiz from './components/quiz/quiz';
+// pages
+import Account from './routes/account';
+import Explore from './routes/explore/explore';
+import Learn from './routes/learn/learn';
+
 import "./blueprint.css";
 import "./App.css";
 
@@ -25,6 +29,9 @@ function App() {
           </Route>
           <Route path="/learn">
             <Learn />
+          </Route>
+          <Route path="/explore">
+            <Explore />
           </Route>
           <Route path="/recycling">
             <Quiz 

@@ -12,7 +12,7 @@ function Challenge({ name, score, total, icon, link }) {
         <div className="name">{name} <Icon icon={icon} /></div>
 
         <div className="score">{score}</div>
-        <div className="total">{score} / {total}</div>
+        <div className="total">{score} / {total} GP</div>
       </div>
     </Link>
   );

@@ -1,29 +1,47 @@
 .Challenge {
     width: 140px;
     height: 140px;
-    background: lightyellow;
+    background: lime;
     border-radius: 140px;
     border: 2px solid limegreen;
     text-align: center;
-    display: flow-root;
+    display: block;
     float: left;
     padding-top: 32px;
     margin-right: 24px;
     margin-bottom: 24px;
 }
 
-.Challenge:first-child {
+/* .Challenge:first-child {
     display: block;
     float: none !important;
     margin: 0 auto 24px;
-}
+} */
 
 .Challenge .name, 
-.Challenge .score, 
+.Challenge .score {
+    text-align: center;
+    display: block;
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 0 auto 12px;
+    color: white;
+}
+
 .Challenge .total {
     text-align: center;
     display: block;
-    width: 100%;
     text-transform: uppercase;
     font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    background: limegreen;
+    border-radius: 8px;
+    padding: 4px;
+    color: white;
+    width: auto;
+    display: inline-block;
+    margin-top: 12px auto;
 }
