@@ -1,7 +1,5 @@
 import React from 'react';
-import { Button } from "@blueprintjs/core";
 import Challenge from "./challenge";
-import { Link } from "react-router-dom";
 import "./learn.css";
 
 function Learn() {

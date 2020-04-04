@@ -1,3 +1,21 @@
 .Map img {
   width: 100%;
 }
+
+.Map {
+  margin: 24px;
+}
+
+.Map__itemHeader {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+.Map__item {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}

@@ -1,13 +1,12 @@
 import React from 'react';
 import { Radio, RadioGroup } from "@blueprintjs/core";
-import { FormGroup, Slider, Button } from "@blueprintjs/core";
+import { Button } from "@blueprintjs/core";
 import Complete from '../complete/complete';
 import "./quiz.css";
 import DATA from "./data/quiz_WM.json";
 
 function WMQuiz({ type, description, points }) {
     const [value, handleChange] = React.useState("one");
-    const [foodScraps, setFoodScraps] = React.useState(1);
     const [isComplete, setComplete] = React.useState(false);
     const [questions, setQuestion] = React.useState(DATA.questions);
     return (

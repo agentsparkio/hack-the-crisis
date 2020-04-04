@@ -1,0 +1,28 @@
+{
+    "leaderboard": [
+        {
+            "label": "Marrickville",
+            "lat": "0",
+            "long": "0",
+            "points": "320000"
+        },
+        {
+            "label": "Castle Hill",
+            "lat": "0",
+            "long": "0",
+            "points": "21300"
+        },
+        {
+            "label": "Manly",
+            "lat": "0",
+            "long": "0",
+            "points": "18590"
+        },
+        {
+            "label": "Epping",
+            "lat": "0",
+            "long": "0",
+            "points": "15692"
+        }
+    ]
+}
