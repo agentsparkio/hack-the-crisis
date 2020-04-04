@@ -10,7 +10,11 @@ function Profile({ location, points, userName }) {
                 <h2>{userName}</h2>
                 <div className="Profile__points">{points}</div>
                 <div className="Profile__pointsText">Green Points</div>
-        <Icon icon="geolocation" /> {location}
+                <div className="Profile__level">Level 16: Green Thumb <Icon icon="thumbs-up" /></div>
+        {/* <Icon icon="geolocation" /> {location} */}
+        <div className="bottomSpace" />
+        <h3>Your badges</h3>
+        [ badges ]
             </div>
         </div>
     );

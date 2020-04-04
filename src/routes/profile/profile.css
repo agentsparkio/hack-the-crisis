@@ -9,7 +9,11 @@
     margin: 20px auto;
     text-align: center;
 }
-
+.Profile__level {
+    margin-bottom: 24px;
+    font-family: CustomFontBold;
+    color: limegreen;
+}
 .Profile .info {
     text-align: center;
     line-height: 1.2;

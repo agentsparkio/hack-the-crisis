@@ -77,7 +77,7 @@ function WMQuiz({ type, description, points }) {
                 <Radio label="Other" value="three" />
             </RadioGroup> */}
             <div className="bottomSpace" />
-            <Button intent="success" onClick={() => setComplete(true)} type="submit" title="Submit assessment">Submit assessment</Button>
+            <Button intent="success" onClick={() => setComplete(true)} type="submit" title="Submit">Submit for {points} Green Points!</Button>
         </div>
     );
 }
