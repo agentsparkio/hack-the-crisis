@@ -1,11 +1,11 @@
 @font-face {
   font-family: CustomFont;
-  src: url("/AmaticSC-Regular.ttf");
+  src: url("/RobotoCondensed-Regular.ttf");
 }
 
 @font-face {
   font-family: CustomFontBold;
-  src: url("/AmaticSC-Bold.ttf");
+  src: url("/RobotoCondensed-Bold.ttf");
 }
 
 body {
@@ -17,11 +17,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2, h3, h4, h5 {
+  color: #333;
+  font-family: CustomFontBold;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+a, a:link, a:hover {
+  color: limegreen;
+  text-decoration: none !important;
+}
 .container {
   text-align: center;
   margin: 24px;
@@ -37,4 +45,8 @@ code {
 
 .bottomSpace {
   margin-bottom: 24px;
+}
+
+.clear {
+  clear: both;
 }

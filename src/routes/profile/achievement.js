@@ -15,15 +15,15 @@ function Achievement() {
         {stubData.achievements.length && stubData.achievements.map(event => (
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: `${event.colour}`, color: '#fff' }}
-                contentArrowStyle={{ borderRight: `7px solid  ${event.colour}` }}
+                contentStyle={{ background: '#efefef', color: '#fff' }}
+                contentArrowStyle={{ borderRight: `7px solid  #efefef` }}
                 date={event.datetimestamp}
                 iconStyle={{ background: '#efefef', color: `${event.colour}` }}
                 icon={<Icon icon={event.badge} />}
               >
-                <h3 className="vertical-timeline-element-title">{event.details}
+                <Badge points={event.details} icon={event.badge} />
                 <div className="right Achievement__points"><Badge points={event.points} /></div>
-                </h3>
+                <div className="clear" />
               </VerticalTimelineElement>
             ))}
       }

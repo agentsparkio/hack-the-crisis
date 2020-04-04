@@ -12,3 +12,26 @@
     line-height: 1.2;
     color: #333;
 }
+
+.Profile h2 {
+    font-size: 1.4rem;
+    font-family: CustomFont;
+    letter-spacing: 1px;
+}
+
+.Profile__points {
+    font-size: 4rem;
+    font-family: CustomFont;
+    line-height: 1;
+
+}
+
+
+.Profile__pointsText {
+    line-height: 1;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-family: CustomFont;
+
+}

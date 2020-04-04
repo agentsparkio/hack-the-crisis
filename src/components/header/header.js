@@ -16,16 +16,13 @@ import "./header.css";
 function Header() {
     const ProfileMenu = (
         <Menu>
-            <Link to="/timeline"><MenuItem icon="star" text="Achievements" /></Link>
+            <Link to="/profile"><MenuItem icon="user" text="Profile" /></Link>
+            <Link to="/timeline"><MenuItem icon="star" text="My Badges" /></Link>
             <Link to="/my-data"><MenuItem icon="timeline-line-chart" text="My Data" /></Link>
             <MenuItem icon="map" text="Map (coming soon)" disabled={true} />
             <MenuDivider />
             <Link to="/about"><MenuItem icon="help" text="About" /></Link>
-            <MenuItem icon="log-out" text="Logout" />
-            {/* <MenuItem icon="cog" text="Settings...">
-                <MenuItem icon="add" text="Add new application" disabled={true} />
-                <MenuItem icon="remove" text="Remove application" />
-            </MenuItem> */}
+            <MenuItem icon="log-out" text="Logout" disabled={true} />
         </Menu>
     );
 
@@ -40,7 +37,7 @@ function Header() {
                 </NavbarGroup>
                 <NavbarGroup align={Alignment.RIGHT} className="Header__points">
                 <Popover content={ProfileMenu} position={Position.RIGHT_BOTTOM}>
-                    <Link to="/profile"><Icon icon="user"></Icon></Link>
+                    <Icon icon="user"></Icon>
                 </Popover>
                 </NavbarGroup>
             </Navbar>

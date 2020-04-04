@@ -6,11 +6,23 @@
 .vertical-timeline .bp3-icon svg {
     margin-left: 0px;
     margin-top: 7px;
-    left: 30%;
+    left: 0;
     top: 31%;
+}
+
+.Achievement .vertical-timeline-element-date {
+    float: none;
+    text-align: left;
+    display: block;
+    color: #333;
 }
 
 .Achievement__points {
     position: relative;
     top: -10px;
+}
+
+.Achievement .Badge.badge {
+    margin-top: 0;
+    float: left;
 }

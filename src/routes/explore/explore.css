@@ -1,8 +1,18 @@
 .Explore .bp3-tab {
     width:50%;
     text-align: center;
+    height: 50px;
+    font-family: CustomFont;
+    font-size: 1.2rem;
+    line-height: 50px;
 }
 
 .Explore .bp3-tab-panel {
     margin-top: 0;
+}
+
+.Explore .bp3-tab[aria-selected="true"] {
+    color: white !important;
+    background-color: limegreen !important;
+    box-shadow: inset 0 -3px 0 limegreen !important;
 }
