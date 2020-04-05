@@ -4,12 +4,12 @@ import Challenge from "./challenge";
 import Alert from "./../../components/alert/alert";
 import "./learn.css";
 
-function Learn({ setNotifyText, setNotifyTextHeader }) {
+function Learn({ userName }) {
   const [newThingsShow, setNewThingsShow] = React.useState(true);
 
     return (
         <div className="Learn container">
-            <h1>Welcome to GP :)</h1>
+            <h1>Hi <strong>{userName}</strong> :)</h1>
             <Alert
             title="Why do you need to care about waste management?"
             content=""
@@ -19,9 +19,9 @@ function Learn({ setNotifyText, setNotifyTextHeader }) {
             cancelFunc={() => setNewThingsShow(false)}
             isHidden={!newThingsShow}
             />
-            <p>The more you learn, the more green points you earn.</p>
+            <p>We've made some lessons to help you do better with your household waste.</p>
             {/* <p><Link to="/about"><Button icon="share" >Learn more about Wasteful ></Button></Link></p> */}
-            <h3>Local Challenges</h3>
+            <h3>Enjoy!</h3>
             <div className="flex">
                 <Challenge
                     name="Managing Waste"

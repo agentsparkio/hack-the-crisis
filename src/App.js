@@ -10,6 +10,7 @@ import Footer from './components/footer/footer';
 import WMQuiz from './components/quiz/WMQuiz';
 
 // pages
+import Dashboard from './routes/me/dashboard';
 import Profile from './routes/profile/profile';
 import Explore from './routes/explore/explore';
 import Learn from './routes/learn/learn';
@@ -22,7 +23,7 @@ import "./blueprint.css";
 import "./App.css";
 
 function App() {
-  const [userName, setUserName] = React.useState("Jane Smith");
+  const [userName, setUserName] = React.useState("Jane");
   const [title, setTitle] = React.useState("Garbage Pride");
   const [location, setLocation] = React.useState("Marrickville");
   const [points, setPoints] = React.useState(200);
@@ -37,56 +38,58 @@ function App() {
         <Switch>
           <Route path="/profile">
             <Profile
-            userName={userName}
-            points={points}
-            location={location}
+              userName={userName}
+              points={points}
+              location={location}
             />
           </Route>
           <Route path="/about">
             <About title={title} />
           </Route>
-          
+
           <Route path="/timeline">
             <Achievement />
           </Route>
           <Route path="/my-data">
             <div className="container">
-            <MyData />
+              <MyData />
             </div>
           </Route>
           <Route path="/learn">
-            <Learn
-            setNotifyText={setNotifyText}
-            setNotifyTextHeader={setNotifyTextHeader}
-            location={location}
+            <Dashboard
+              userName={userName}
+              setNotifyText={setNotifyText}
+              setNotifyTextHeader={setNotifyTextHeader}
+              location={location}
             />
           </Route>
           <Route path="/food">
             <Food />
           </Route>
           <Route path="/explore">
-            <Explore 
-            setNotifyText={setNotifyText}
-            setNotifyTextHeader={setNotifyTextHeader}
+            <Explore
+              setNotifyText={setNotifyText}
+              setNotifyTextHeader={setNotifyTextHeader}
             />
           </Route>
           <Route path="/waste-management">
             <div className="container-top">
-            <WMQuiz
-              type="Waste Management"
-              description="Complete this quiz to earn 32 extra points"
-              points={200}
-              setNotifyText={setNotifyText}
-              setNotifyTextHeader={setNotifyTextHeader}
-            />
+              <WMQuiz
+                type="Waste Management"
+                description="Complete this quiz to earn 32 extra points"
+                points={200}
+                setNotifyText={setNotifyText}
+                setNotifyTextHeader={setNotifyTextHeader}
+              />
             </div>
           </Route>
           <Route path="/">
             {/* <Onboarding /> */}
             <Learn
-            setNotifyText={setNotifyText}
-            setNotifyTextHeader={setNotifyTextHeader}
-            location={location}
+              userName={userName}
+              setNotifyText={setNotifyText}
+              setNotifyTextHeader={setNotifyTextHeader}
+              location={location}
             />
           </Route>
         </Switch>
