@@ -32,7 +32,7 @@ function App() {
   const [notifyTextHeader, setNotifyTextHeader] = React.useState("Hello newbie! :) ");
   const [introAlert, setIntroAlert] = React.useState(true);
   const [introAlertText, setIntroAlertText] = React.useState("<p>We understand that there are more people than ever in self isolation right now. </p><p>We are here to help you organise and reduce your waste at home to allow for more efficient purchases of foods and essentials.</p><p>The more you learn and donate, the more green points you earn. </p><p>You will be able to purchase sustainable products and services from local enterprises with your Green Points. <br /></p><br />");
-  const [introAlertHeader, setIntroAlertHeader] = React.useState("Do you to do something fulfilling for yourself and your home?");
+  const [introAlertHeader, setIntroAlertHeader] = React.useState("Do you want to do something fulfilling for yourself and your home?");
   React.useEffect(() => {
     if(!introAlert) {
       setNotifyText("Learn more about how this app can help you reduce your waste.");

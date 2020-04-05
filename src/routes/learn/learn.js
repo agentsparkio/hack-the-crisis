@@ -13,7 +13,14 @@ function Learn({ userName, setIntroAlert, introAlert, introAlertText, introAlert
             content={introAlertText}
             confirmText="Yes, lets do this"
             cancelText="No thanks"
-            confirmFunc={() => {}}
+            confirmFunc={() => {
+                // FIXME:
+                if(introAlertHeader.indexOf("Do you want to do something fulfilling") !== 0) {
+                    window.location.replace("/rewards")
+                } else {
+                    window.location.replace("/about")
+                }
+            }}
             cancelFunc={() => setIntroAlert(false)}
             isHidden={!introAlert}
             />
