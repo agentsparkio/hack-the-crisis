@@ -30,6 +30,13 @@ function App() {
   const [notify, setNotify] = React.useState(false);
   const [notifyText, setNotifyText] = React.useState("Welcome! Earn points by reducing your waste and compete with neighbouring communities!");
   const [notifyTextHeader, setNotifyTextHeader] = React.useState("Hello newbie! :) ");
+  const [introAlert, setIntroAlert] = React.useState(true);
+  React.useEffect(() => {
+    if(!introAlert) {
+      setNotifyText("Learn more about how this app can help you reduce your waste.");
+      setNotifyTextHeader("More info");
+    }
+  }, [introAlert]);
 
   return (
     <Router>
@@ -86,6 +93,8 @@ function App() {
           <Route path="/">
             {/* <Onboarding /> */}
             <Learn
+              introAlert={introAlert}
+              setIntroAlert={setIntroAlert}
               userName={userName}
               setNotifyText={setNotifyText}
               setNotifyTextHeader={setNotifyTextHeader}

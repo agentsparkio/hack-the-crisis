@@ -6,7 +6,6 @@ function Food({ setNotifyText, setNotifyTextHeader }) {
         <div className="Food container">
             <h1>Manage your food</h1>
             <p>We are working on a tool to track your food inventory.</p>
-            <p>Stay tuned.</p>
         </div>
     );
 }
