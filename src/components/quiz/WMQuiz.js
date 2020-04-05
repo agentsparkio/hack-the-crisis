@@ -26,7 +26,7 @@ function WMQuiz({ type, points, setNotifyText, setNotifyTextHeader, setIntroAler
             setNotifyTextHeader("You've just won 200 points! CONGRATULATIONS :)")
             setIntroAlert(true)
             setIntroAlertText("<p>Thanks for completing the <strong>Managing Waste Quiz!</strong>. </p><p>Go to the <a href='/rewards'>Rewards page</a> to redeem your 200 points. </p>")
-            setIntroAlertHeader("You've just won 200 points! CONGRATULATIONS :)")
+            setIntroAlertHeader("CONGRATULATIONS! You've just won 200 points! ")
             setPoints(1200);
         }
     }, [isComplete]);
