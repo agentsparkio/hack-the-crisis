@@ -100,6 +100,7 @@ function App() {
                 setIntroAlert={setIntroAlert}
                 setIntroAlertText={setIntroAlertText}
                 setIntroAlertHeader={setIntroAlertHeader}
+                setPoints={setPoints}
               />
             </div>
           </Route>

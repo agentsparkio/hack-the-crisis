@@ -5,7 +5,7 @@ import Complete from '../complete/complete';
 import "./quiz.css";
 // import DATA from "./data/quiz_WM.json";
 
-function WMQuiz({ type, points, setNotifyText, setNotifyTextHeader, setIntroAlert, setIntroAlertText, setIntroAlertHeader }) {
+function WMQuiz({ type, points, setNotifyText, setNotifyTextHeader, setIntroAlert, setIntroAlertText, setIntroAlertHeader, setPoints }) {
     const [propFoodScraps, handleChange] = React.useState("");
     const [foodScraps, setFoodScraps] = React.useState(0);
     const [threeRs, setThreeRs] = React.useState("");
@@ -27,6 +27,7 @@ function WMQuiz({ type, points, setNotifyText, setNotifyTextHeader, setIntroAler
             setIntroAlert(true)
             setIntroAlertText("<p>Thanks for completing the <strong>Managing Waste Quiz!</strong>. </p><p>Go to the <a href='/rewards'>Rewards page</a> to redeem your 200 points. </p>")
             setIntroAlertHeader("You've just won 200 points! CONGRATULATIONS :)")
+            setPoints(1200);
         }
     }, [isComplete]);
 
