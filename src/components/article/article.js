@@ -1,8 +1,9 @@
 import React from 'react';
 import { Button, Card, Elevation } from "@blueprintjs/core";
+import Badge from "../../components/badge/badge";
 import "./article.css";
 
-function Article({ image, title, description }) {
+function Article({ image, title, description, points }) {
     return (
         <div className="Article">
             <Card interactive={true} elevation={Elevation.TWO}>
@@ -13,6 +14,7 @@ function Article({ image, title, description }) {
                         <a href="http://www.test.com">{title}</a>
                     </h5>
                     <p className="Article__desc">{description}</p>
+                    <Badge points={points} />
                 </div>
             </Card>
             <div className="clear" />

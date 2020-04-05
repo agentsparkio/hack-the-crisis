@@ -1,8 +1,8 @@
 .Article__image {
-    background-size: contain;
+    background-size: cover;
     width: 180px;
     background-repeat: no-repeat;
-    height: 120px;
+    height: 160px;
     display: block;
     float: left;
     background-position: left top;
@@ -11,7 +11,7 @@
 .Article .bp3-card {
     padding: 0;
     transition: 0.2s linear all;
-    height: 120px;
+    height: 160px;
     margin-bottom: 12px;
 }
 

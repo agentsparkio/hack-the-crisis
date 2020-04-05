@@ -26,11 +26,13 @@ function App() {
   const [userName, setUserName] = React.useState("Jane");
   const [title, setTitle] = React.useState("Garbage Pride");
   const [location, setLocation] = React.useState("Marrickville");
-  const [points, setPoints] = React.useState(200);
+  const [points, setPoints] = React.useState(1000);
   const [notify, setNotify] = React.useState(false);
-  const [notifyText, setNotifyText] = React.useState("Welcome! Earn points by reducing your waste and compete with neighbouring communities!");
+  const [notifyText, setNotifyText] = React.useState("<p>We understand that there are more people than ever in self isolation right now. </p><p>We are here to help you organise and reduce your waste at home to allow for more efficient purchases of foods and essentials.</p><p>The more you learn and donate, the more green points you earn. </p><p>You will be able to purchase sustainable products and services from local enterprises with your Green Points. <br /></p><a>Find out how</a><br />");
   const [notifyTextHeader, setNotifyTextHeader] = React.useState("Hello newbie! :) ");
   const [introAlert, setIntroAlert] = React.useState(true);
+  const [introAlertText, setIntroAlertText] = React.useState("<p>We understand that there are more people than ever in self isolation right now. </p><p>We are here to help you organise and reduce your waste at home to allow for more efficient purchases of foods and essentials.</p><p>The more you learn and donate, the more green points you earn. </p><p>You will be able to purchase sustainable products and services from local enterprises with your Green Points. <br /></p><br />");
+  const [introAlertHeader, setIntroAlertHeader] = React.useState("Do you to do something fulfilling for yourself and your home?");
   React.useEffect(() => {
     if(!introAlert) {
       setNotifyText("Learn more about how this app can help you reduce your waste.");
@@ -77,6 +79,14 @@ function App() {
             <Explore
               setNotifyText={setNotifyText}
               setNotifyTextHeader={setNotifyTextHeader}
+              selectedTab="Leaderboard"
+            />
+          </Route>
+          <Route path="/rewards">
+            <Explore
+              setNotifyText={setNotifyText}
+              setNotifyTextHeader={setNotifyTextHeader}
+              selectedTab="Rewards"
             />
           </Route>
           <Route path="/waste-management">
@@ -87,6 +97,9 @@ function App() {
                 points={200}
                 setNotifyText={setNotifyText}
                 setNotifyTextHeader={setNotifyTextHeader}
+                setIntroAlert={setIntroAlert}
+                setIntroAlertText={setIntroAlertText}
+                setIntroAlertHeader={setIntroAlertHeader}
               />
             </div>
           </Route>
@@ -94,6 +107,8 @@ function App() {
             {/* <Onboarding /> */}
             <Learn
               introAlert={introAlert}
+              introAlertText={introAlertText}
+              introAlertHeader={introAlertHeader}
               setIntroAlert={setIntroAlert}
               userName={userName}
               setNotifyText={setNotifyText}

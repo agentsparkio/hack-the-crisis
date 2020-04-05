@@ -5,8 +5,8 @@ import Complete from '../complete/complete';
 import "./quiz.css";
 // import DATA from "./data/quiz_WM.json";
 
-function WMQuiz({ type, points, setNotifyText, setNotifyTextHeader }) {
-    const [value, handleChange] = React.useState("");
+function WMQuiz({ type, points, setNotifyText, setNotifyTextHeader, setIntroAlert, setIntroAlertText, setIntroAlertHeader }) {
+    const [propFoodScraps, handleChange] = React.useState("");
     const [foodScraps, setFoodScraps] = React.useState(0);
     const [threeRs, setThreeRs] = React.useState("");
     const [isComplete, setComplete] = React.useState(false);
@@ -15,16 +15,18 @@ function WMQuiz({ type, points, setNotifyText, setNotifyTextHeader }) {
     // const [questions, setQuestion] = React.useState(DATA.questions);
     React.useEffect(() => {
         let result = 0;
-        if(value!== "") result++;
+        if(propFoodScraps!== "") result++;
         if(foodScraps!== 0) result++;
         if(threeRs!== "") result++;
         setProgress(parseFloat(result/3));
-    }, [value, foodScraps, threeRs]);
+    }, [propFoodScraps, foodScraps, threeRs]);
     React.useEffect(() => {
         if(isComplete === true) {
-            setNotifyText("<p>Thanks for completing the <strong>Managing Waste Quiz!</strong>. </p><p>Go to the rewards page to redeem your points. </p>")
+            setNotifyText("<p>Thanks for completing the <strong>Managing Waste Quiz</strong>.</p><p>Go to the <a href='/rewards'>Rewards page</a> to redeem your points. </p>")
             setNotifyTextHeader("You've just won 200 points! CONGRATULATIONS :)")
-
+            setIntroAlert(true)
+            setIntroAlertText("<p>Thanks for completing the <strong>Managing Waste Quiz!</strong>. </p><p>Go to the <a href='/rewards'>Rewards page</a> to redeem your 200 points. </p>")
+            setIntroAlertHeader("You've just won 200 points! CONGRATULATIONS :)")
         }
     }, [isComplete]);
 
@@ -82,6 +84,7 @@ function WMQuiz({ type, points, setNotifyText, setNotifyTextHeader }) {
                 label="Food scraps in one week?"
                 labelFor="text-input"
                 labelInfo="(cups)"
+                helperText="These are used to determine your average food waste."
             >
                 <Slider
                     min={0}
@@ -102,7 +105,7 @@ function WMQuiz({ type, points, setNotifyText, setNotifyTextHeader }) {
                 onChange={(event) => {
                     handleChange(event.currentTarget.value)
                 }}
-                selectedValue={value}
+                selectedValue={propFoodScraps}
             >
                 <Radio label="Fruit and veggies" value="one" />
                 <Radio label="Processed foods" value="two" />

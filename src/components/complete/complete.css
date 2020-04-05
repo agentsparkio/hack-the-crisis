@@ -43,6 +43,7 @@
     width: calc(100% - 48px);
     left: 24px;
     background-color: limegreen !important;
+    background-image: none !important;
     z-index: 100000;
 }
 

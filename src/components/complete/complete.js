@@ -17,12 +17,12 @@ function Complete({ points, isHidden }) {
             />
 
             <div className="Complete__pointsContainer">
-                <span className="Complete__pointsBrackets"> {`{`} </span>
+                <span className="Complete__pointsBrackets"> {"\\ "} </span>
                 <div className="Complete__pointsStack">
                     <span className="Complete__points"> {points} </span>
                     <span className="Complete__pointsTxt">GREEN POINTS</span>
                 </div>
-                <span className="Complete__pointsBrackets"> {`}`}  </span>
+                <span className="Complete__pointsBrackets"> {`/`}  </span>
 
             </div>
             <Button className="Complete__wohoo" onClick={() => {

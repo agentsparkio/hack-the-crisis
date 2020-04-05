@@ -30,7 +30,7 @@ function Map() {
                         <div className="clear" />
                     </div>)
             })}
-            <img src="./map.png" />
+            <img src="./map2.png" />
 
         </div>
     );
