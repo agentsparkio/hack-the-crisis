@@ -1,3 +1,17 @@
-.Quiz {
-    margin: 24px;
+.Quiz .bp3-progress-bar,
+.Quiz .bp3-progress-meter
+ {
+    border-radius: 0 !important;
+    height: 28px !important;
+}
+
+.Quiz .bp3-progress-meter {
+    background: lime !important;
+}
+
+.Quiz .bp3-form-group {
+    width: 80%;
+    margin: 24px auto 24px;
+    border-top: 1px solid #ccc;
+    padding: 24px 0 !important;
 }

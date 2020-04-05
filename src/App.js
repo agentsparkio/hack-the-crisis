@@ -8,27 +8,31 @@ import {
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import WMQuiz from './components/quiz/WMQuiz';
+
 // pages
 import Profile from './routes/profile/profile';
-import Dashboard from './routes/me/dashboard';
 import Explore from './routes/explore/explore';
 import Learn from './routes/learn/learn';
 import Achievement from "./routes/profile/achievement";
 import MyData from "./routes/profile/myData";
 import About from "./routes/profile/about";
+import Food from "./routes/food/food";
 
 import "./blueprint.css";
 import "./App.css";
 
 function App() {
   const [userName, setUserName] = React.useState("Jane Smith");
-  const [title, setTitle] = React.useState("Zero Waste");
+  const [title, setTitle] = React.useState("Garbage Pride");
   const [location, setLocation] = React.useState("Marrickville");
   const [points, setPoints] = React.useState(200);
+  const [notify, setNotify] = React.useState(false);
+  const [notifyText, setNotifyText] = React.useState("Welcome! Earn points by reducing your waste and compete with neighbouring communities!");
+  const [notifyTextHeader, setNotifyTextHeader] = React.useState("Hello newbie! :) ");
 
   return (
     <Router>
-      <Header title={title} location={location} />
+      <Header title={title} location={location} notify={notify} notifyText={notifyText} notifyTextHeader={notifyTextHeader} />
       <div className="content">
         <Switch>
           <Route path="/profile">
@@ -51,22 +55,37 @@ function App() {
             </div>
           </Route>
           <Route path="/learn">
-            <Learn />
+            <Learn
+            setNotifyText={setNotifyText}
+            setNotifyTextHeader={setNotifyTextHeader}
+            location={location}
+            />
+          </Route>
+          <Route path="/food">
+            <Food />
           </Route>
           <Route path="/explore">
-            <Explore />
+            <Explore 
+            setNotifyText={setNotifyText}
+            setNotifyTextHeader={setNotifyTextHeader}
+            />
           </Route>
           <Route path="/waste-management">
-            <div className="container">
+            <div className="container-top">
             <WMQuiz
               type="Waste Management"
               description="Complete this quiz to earn 32 extra points"
               points={200}
+              setNotifyText={setNotifyText}
+              setNotifyTextHeader={setNotifyTextHeader}
             />
             </div>
           </Route>
           <Route path="/">
-            <Dashboard
+            {/* <Onboarding /> */}
+            <Learn
+            setNotifyText={setNotifyText}
+            setNotifyTextHeader={setNotifyTextHeader}
             location={location}
             />
           </Route>

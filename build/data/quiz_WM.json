@@ -1,7 +1,6 @@
 {
     "questions": [
         {
-            "id": "1",
             "type": "radio",
             "label": "How do you feel about the future of waste management?",
             "answers": [
@@ -12,12 +11,44 @@
                     "label": "Negative"
                 }
             ]
+        },
+        {
+            "type": "radio",
+            "label": "What do the 3 R's in waste disposal stand for?",
+            "answers": [
+                {
+                    "label": "Reorganise, Reuse, Recycle"
+                },
+                {
+                    "label": "Reduce, Reuse, Recycle"
+                },
+                {
+                    "label": "Reduce, Remake, Recycle"
+                }
+            ]
+        },
+        {
+            "type": "radio",
+            "label": "Glass recycling is seperated into colours, because glass keeps its colours after recycling.",
+            "answers": [
+                {
+                    "label": "True"
+                },
+                {
+                    "label": "False"
+                }
+            ]
         }
     ],
     "answers": [
         {
-            "id": "1",
-            "answer": "Positive"
+            "value": "Positive"
+        },
+        {
+            "value": ""
+        },
+        {
+            "value": ""
         }
     ]
 }

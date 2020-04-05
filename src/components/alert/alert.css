@@ -1,0 +1,10 @@
+.Alert__dashboardHeader {
+    margin-bottom: 24px;
+    text-align: center;
+    font-family: CustomFontBold;
+    font-size: 1.2rem;
+}
+
+.Alert h2, .Alert p {
+    text-align: center;
+}

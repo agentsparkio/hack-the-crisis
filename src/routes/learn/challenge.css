@@ -10,14 +10,10 @@
     margin-right: 0.5em;
     margin-bottom: 24px;
     flex: 1;
-    border-radius: 1000px;
+    /* border-radius: 1000px; */
     height: 200px;
     width: 200px;
 
-}
-
-.Challenge.complete {
-    border-style: solid;
 }
 
 .Challenge__icon svg {
@@ -34,7 +30,7 @@
     font-weight: bold;
     margin: 0 auto 12px;
     font-family: CustomFontBold;
-    background: -webkit-linear-gradient(limegreen, #ccc);
+    background: -webkit-linear-gradient(#000, #777);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -91,4 +87,24 @@
     background: -webkit-linear-gradient(red, darkred);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.Challenge.complete .name {
+    background: -webkit-linear-gradient(#333, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Challenge.complete {
+    border-style: solid;
+    cursor: not-allowed;
+    background: #ccc;
+}
+
+
+.Challenge.complete svg {
+    display: none;
+    border-style: solid;
+    border-color: limegreen;
+    background: white;
 }

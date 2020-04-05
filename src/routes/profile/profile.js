@@ -4,7 +4,7 @@ import "./profile.css";
 
 function Profile({ location, points, userName }) {
     return (
-        <div className="Profile">
+        <div className="Profile container">
             <div className="profile" />
             <div className="info">
                 <h2>{userName}</h2>

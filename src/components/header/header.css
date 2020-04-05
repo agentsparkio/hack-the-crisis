@@ -6,6 +6,17 @@
     z-index: 19;
 }
 
+.Header__profile {
+    width: 36px;
+    height: 36px;
+    background-image: url(/profile.jpg);
+    border-radius: 100px;
+    margin: 0 24px 0 24px;
+    text-align: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
 .Header .bp3-navbar {
     background: #333;
 }
@@ -49,6 +60,8 @@
     display: inline-block;
     margin-right: 12px;
     fill: #aaa !important;
+    height: 24px;
+    width: 24px;
 }
 
 .Header__location svg {

@@ -43,10 +43,14 @@
     width: calc(100% - 48px);
     left: 24px;
     background-color: limegreen !important;
+    z-index: 100000;
+}
+
+.Complete__wohoo .bp3-button-text{
+    color: white !important;
+    line-height: 50px;
+    letter-spacing: 2px;
     font-size: 1.5rem !important;
     font-weight: bold;
-    letter-spacing: 2px;
-    padding: 24px !important;
-    z-index: 10;
-    color: white !important;
+    height: 50px;
 }

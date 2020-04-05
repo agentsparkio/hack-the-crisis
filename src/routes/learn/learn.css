@@ -1,5 +1,4 @@
 .Learn {
-    padding: 24px;
     display: block;
 }
 .Learn__progress {
@@ -11,13 +10,3 @@
     font-size: 0.8rem;
 }
 
-.Learn__dashboardHeader {
-    margin-bottom: 24px;
-    text-align: center;
-    font-family: CustomFontBold;
-    font-size: 1.2rem;
-}
-
-.Learn h1 .Learn p {
-    text-align: center;
-}

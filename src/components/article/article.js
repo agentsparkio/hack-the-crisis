@@ -12,7 +12,7 @@ function Article({ image, title, description }) {
                     <h5>
                         <a href="http://www.test.com">{title}</a>
                     </h5>
-                    <p class="Article__desc">{description}</p>
+                    <p className="Article__desc">{description}</p>
                 </div>
             </Card>
             <div className="clear" />

@@ -1,0 +1,37 @@
+.IntroCollapse__hi {
+    width: 100%;
+    background: #333;
+    padding: 24px;
+}
+
+.Intro__hitArea {
+    width: 100%;
+    display: block;
+    background: #333;
+    color: #efefef;
+    font-size: 0.5rem;
+    padding: 12px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.Intro__hitArea svg {
+    fill: #efefef;
+}
+
+.Intro__text {
+    position: relative;
+    top: -3px;
+    color: #efefef;
+}
+.Intro__text {
+    position: relative;
+    top: -3px;
+}
+
+.IntroCollapse__hi {
+    color: #efefef;
+    padding: 24px;
+    font-size: 0.8rem;
+    line-height: 1.3;
+}

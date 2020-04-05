@@ -9,14 +9,16 @@ import {
     Menu, MenuDivider, MenuItem, Popover, Position } from "@blueprintjs/core";
 
 import { Link } from "react-router-dom";
+import IntroCollapse from "../notification/notification";
 import "./header.css";
 
-function Header({ title, location }) {
+function Header({ title, location, notifyTextHeader, notifyText, notify }) {
     const ProfileMenu = (
         <Menu>
             <Link to="/profile"><MenuItem icon="user" text="Profile" /></Link>
             <Link to="/timeline"><MenuItem icon="star" text="My Badges" /></Link>
             <Link to="/my-data"><MenuItem icon="timeline-line-chart" text="My Data" /></Link>
+            <Link to="/food"><MenuItem icon="send-to-graph" text="Food Management" /></Link>
             <MenuItem icon="map" text="Map (coming soon)" disabled={true} />
             <MenuDivider />
             <Link to="/about"><MenuItem icon="help" text="About" /></Link>
@@ -28,7 +30,7 @@ function Header({ title, location }) {
         <header className="Header">
             <Navbar>
                 <NavbarGroup align={Alignment.LEFT} className="Header__logo">
-                    <Icon icon={IconNames.CIRCLE} />
+                    <Icon icon={IconNames.CLEAN} />
                     <NavbarHeading>
                         <Link to="/"><h1>{title}</h1></Link> <span className="Header__tag">Improve your life.</span>
                     </NavbarHeading>
@@ -38,10 +40,12 @@ function Header({ title, location }) {
                      Your location is {location} <Icon icon="geolocation" />
                     </span>
                 <Popover content={ProfileMenu} position={Position.RIGHT_BOTTOM}>
-                    <Icon icon="user" className="Header__profileIcon"></Icon>
+                    <div className="Header__profile" />
+                    {/* <Icon icon="user" className="Header__profileIcon"></Icon> */}
                 </Popover>
                 </NavbarGroup>
             </Navbar>
+            <IntroCollapse isOpen={notify} notify={notify} notifyTextHeader={notifyTextHeader} notifyText={notifyText} />
         </header>
     );
 }
